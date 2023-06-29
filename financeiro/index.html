@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Tabela</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="total" id="totalValue">Total Geral</div>
+        <div class="total-by-month" id="totalByMonth">Total Por Mês</div>
+        <div class="total-by-responsavel" id="totalByResponsavel">Total Por responsável</div>
+        <div class="total-by-category" id="totalByCategory">Total por Categoria</div>
+    </header>
+    <main>
+        <div class="form-container">
+            <input type="text" id="responsavelInput" placeholder="Responsável">
+            <input type="text" id="dataCompraInput" placeholder="Data da Compra">
+            <input type="text" id="descricaoInput" placeholder="Descrição">
+            <input type="text" id="valorInput" placeholder="Valor">
+            <input type="number" id="parcelamentoInput" placeholder="Parcelamento">
+            <input type="text" id="observacaoInput" placeholder="Observação">
+            <input type="text" id="categoriaInput" placeholder="Categoria">
+            <button onclick="createOrUpdateEntry()">Adicionar</button>
+
+        </div>
+
+        <table class="table" id="table">
+            <tr>
+                <th>Responsável</th>
+                <th>Data da Compra</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Parcelamento</th>
+                <th>Observações</th>
+                <th>Categoria</th>
+                <th>Ações</th>
+            </tr>
+        </table>
+
+
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

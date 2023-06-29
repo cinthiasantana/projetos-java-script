@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #611530;
+}
+
+#main {
+    background-color: #92345F;
+    border-radius: .4rem;
+    padding: 3rem 1.5rem;
+    margin: 3rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.calculadora h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.calculadora h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1.8rem 0 2rem 0;
+    font-weight: 300;
+}
+
+.calculadora p {
+    font-size: .8rem;
+    margin: 1rem 0 .6rem 0;
+    font-weight: 300;
+}
+
+.calculadora input {
+    width: 100%;
+    padding: .8rem 0;
+    border: 0;
+    outline: none;
+    border-radius: .4rem;
+    background-color: #D371A8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.calculadora input[type] {
+    padding-left: 1rem;
+}
+
+.calculadora .calcularBtn {
+    width: 100%;
+    background-color: #65C969;
+    margin: 2rem 0;
+    padding: .8rem 0;
+    border: 0;
+    outline: none;
+    border-radius: .4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tabela h1 {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.tabela table{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabela table th {
+    text-align: start;
+    font-weight: 900;
+}
+
+.tabela table th:after,
+.tabela table td:after {
+    content: "";
+    width: 100%;
+    border: thin #D371A8 solid;
+    display: inline-block;
+}
+
+.tabela table td {
+    padding: .5rem 0;
+    font-size: 0.8rem;
+}
+
+.resultado {
+    text-align: center;
+    border: 0;
+    padding: 1.5rem 0;
+    border-radius: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(97, 21, 48, 0.5 );
+    display: none;
+    margin: 1.5rem 0 .5rem 0;
+    font-size: 1rem;
+}
+
+#resultado .classificacao, #resultado .resultadoIMC {
+    color: #D371A8;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.novoCalculoBtn{
+    background-color: transparent;
+    border: 0;
+    padding: .8rem 0;
+    border-radius: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+
+    #main {
+        max-width: 1100px;
+        display: flex;
+        margin: 3rem auto;
+        padding-top: 4rem ;
+        padding-bottom: 4rem;
+    }
+
+    .tabela{
+        width: 50%;
+        padding: 0 2rem 0 1rem;
+    }
+    
+    .tabela table td {
+        font-size: 1rem;
+    }
+
+    .calculadora {
+        width: 50%;
+        order: 1;
+        border-left: thin #d371a8 solid;
+        padding: 0 3rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .calculadora input::placeholder {
+        color: #ffffff83;
+        font-size: .8rem;
+    }
+
+    .calculadora h3 {
+        font-size: 1.2rem;
+        margin: 1.8rem 0 .8rem 0;
+    }
+    
+    .calculadora p {
+        font-size: 1rem;
+    }
+}
